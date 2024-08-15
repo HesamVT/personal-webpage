@@ -158,7 +158,7 @@ header {
 }
 
 .logos {
-    flex: 0 0 320px; /* Consistent logo size for all relevant pages */
+    flex: 0 0 240px; /* Consistent logo size for all relevant pages */
     display: flex;
     flex-direction: column;
     justify-content: center;
