@@ -1,0 +1,355 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.header-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.header-right ul li {
+    margin: 0;
+}
+
+.header-right ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+
+.header-right ul li a:hover {
+    background-color: #ddd;
+    border-radius: 4px;
+}
+
+/* Sticky Page Title */
+.page-title {
+    background-color: #f4f4f4;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.page-title h2 {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: #333;
+}
+
+/* Home Page Styles */
+.hero-section {
+    background-color: #fff;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-content .headshot {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.intro-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.intro-text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.bio-section {
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.bio-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.bio-section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    margin-right: 15px;
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Education & Teaching Page Styles */
+.education-section h3,
+.academic-appointments h3,
+.teaching-section h3,
+.professional-experience h3,
+.organized-conference-sessions h3,
+.journal-reviews h3,
+.conference-reviews h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: #333;
+}
+
+.experience-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.logos {
+    flex: 0 0 320px; /* Consistent logo size for all relevant pages */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.institution-logo {
+    width: 100%; /* Logos scale to fit container */
+    height: auto;
+}
+
+.details {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.details h4,
+.details h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    font-size: 22px; /* Title font size */
+}
+
+.details p {
+    margin: 5px 0;
+    line-height: 1.6;
+}
+
+.details .date {
+    text-align: right;
+    color: #666;
+    font-weight: 400;
+    font-size: 16px; /* Smaller, consistent date size */
+}
+
+/* Publications Page Styles */
+.social-icons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.social-icons img {
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+}
+
+.publications h3,
+.work-in-progress h3,
+.selected-presentations h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: #333;
+}
+
+.publications ul,
+.work-in-progress ul,
+.selected-presentations ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.publications ul li,
+.work-in-progress ul li,
+.selected-presentations ul li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.publications ul li a,
+.work-in-progress ul li a,
+.selected-presentations ul li a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.publications ul li a:hover,
+.work-in-progress ul li a:hover,
+.selected-presentations ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Honors and Awards Page Styles */
+.honors-section h3,
+.awards-section h3,
+.professional-development-section h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: #333;
+}
+
+.honors-section ul,
+.awards-section ul,
+.professional-development-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.honors-section ul li,
+.awards-section ul li,
+.professional-development-section ul li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.honors-section ul li .date,
+.awards-section ul li .date,
+.professional-development-section ul li .date {
+    font-weight: 400;
+    font-size: 16px; /* Smaller, consistent date size */
+    text-align: right;
+    color: #666;
+    margin-left: 20px;
+}
+
+.professional-development-section .details {
+    margin-bottom: 20px; /* Match spacing with Professional Experience section */
+}
+
+.professional-development-section h4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    font-size: 17px; /* Updated font size */
+    font-weight: bold;
+}
+
+.professional-development-section p {
+    margin: 5px 0;
+    line-height: 1.6;
+}
+
+.professional-development-section .date {
+    text-align: right;
+    color: #666;
+    font-weight: 400;
+}
+
+/* Professional Experience Section - No Bullet Points */
+.professional-experience .details {
+    margin-bottom: 20px;
+}
+
+.professional-experience h4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    font-size: 17px; /* Updated font size */
+    font-weight: bold;
+}
+
+.professional-experience p {
+    margin: 5px 0;
+    line-height: 1.6;
+}
+
+.professional-experience .date {
+    text-align: right;
+    color: #666;
+    font-weight: 400;
+}
+
+/* Footer Section */
+footer {
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.footer-social-links {
+    margin-top: 10px;
+}
+
+.footer-social-links a {
+    margin: 0 10px;
+}
+
+footer img {
+    width: 25px;
+    height: 25px;
+}
