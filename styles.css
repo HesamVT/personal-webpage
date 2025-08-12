@@ -437,3 +437,10 @@ p, li { font-size: clamp(0.95rem, 2.5vw, 18px); }
     text-align: left;
   }
 }
+
+/* Ensure menu stays visible on mobile */
+@media (max-width: 767px) {
+  .header-right ul {
+    display: flex !important; /* force visible */
+  }
+}
