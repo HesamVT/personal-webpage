@@ -353,3 +353,87 @@ footer img {
     width: 25px;
     height: 25px;
 }
+
+/* ===== Responsive Enhancements (additive, safe) ===== */
+
+/* Media should never overflow on small screens */
+img, video, iframe { max-width: 100%; height: auto; }
+
+/* Comfortable, fluid type sizes without touching existing ones */
+h1 { font-size: clamp(1.4rem, 3.5vw, 28px); }
+h2 { font-size: clamp(1.2rem, 3vw, 24px); }
+p, li { font-size: clamp(0.95rem, 2.5vw, 18px); }
+
+/* Slightly tighter container on phones */
+@media (max-width: 767px) {
+  .container { width: 94%; padding: 12px 0; }
+}
+
+/* Header & nav: allow wrapping on small screens (no HTML changes yet) */
+@media (max-width: 767px) {
+  .header-content {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  /* Let the menu wrap onto multiple lines and center it */
+  .header-right ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .header-right ul li a {
+    padding: 8px 10px; /* friendlier tap targets */
+  }
+}
+
+/* Hero: stack image and text vertically on phones */
+@media (max-width: 767px) {
+  .hero-section { padding: 24px 0; }
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+
+  .hero-content .headshot {
+    width: min(40vw, 180px);
+    height: auto;
+  }
+}
+
+/* Bio spacing a bit tighter on phones */
+@media (max-width: 767px) {
+  .bio-section { padding: 16px 0; }
+  .bio-section p { margin-bottom: 12px; }
+  .social-links img { width: 26px; height: 26px; }
+}
+
+/* Footer icons consistent on small screens */
+@media (max-width: 767px) {
+  footer img { width: 22px; height: 22px; }
+}
+
+/* Optional: common two‑column sections stack on small screens (helps other pages too) */
+@media (max-width: 767px) {
+  .experience-item { flex-direction: column; align-items: flex-start; }
+  .logos { flex: none; width: 65%; max-width: 260px; margin-bottom: 12px; }
+  .details { padding-left: 0; }
+}
+
+/* Optional: date rows (that use space-between) stack on phones */
+@media (max-width: 767px) {
+  .honors-section ul li,
+  .awards-section ul li,
+  .professional-development-section ul li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .honors-section ul li .date,
+  .awards-section ul li .date,
+  .professional-development-section ul li .date {
+    margin-left: 0;
+    text-align: left;
+  }
+}
